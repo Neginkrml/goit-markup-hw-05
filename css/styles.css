@@ -516,8 +516,7 @@
     position: relative;
   }
   .modal-form-div{
-    /* margin-bottom: 8px; */
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
   .modal-label{
     font-size: 12px;
@@ -565,13 +564,17 @@
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .modal-form-textarea{
+    margin-bottom: 16px;
+  }
   .textarea:focus{
     border-color: #4D5AE5; 
   }
   .five-div{
     margin-bottom: 24px;
   }
-  .five-input{
+  .five-svg:focus{
+    fill: #4D5AE5;
   }
   .five-label{
     font-size: 12px;
@@ -590,12 +593,12 @@
     justify-content: center;
     fill: transparent;
   }
-  .five-span:checked{
-    border: none;
-    fill: #F4F4FD;
-  }
+
   .five-a{
     color: #4d5ae5;
+    line-height: 1.33;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
   }
   .six-button{
     display: block;
@@ -611,4 +614,9 @@
     background-color: #4D5AE5;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .five-input:checked + .five-label .five-span{
+    color: #4d5ae5;
+    border: none;
+    fill: #F4F4FD;
   }
